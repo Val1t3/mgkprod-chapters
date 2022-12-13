@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
     <!-- GOOGLE FONT DM SANS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <title>Chapters — Framer Scroll Animation Demo</title>
@@ -18,20 +19,35 @@
       href="https://framerusercontent.com/sites/icons/default-favicon.v3.png"
     />
   </head>
-  <body>
-    <div class="menu-frame">
-      <h1 class="">Indx.</h1>
-      <ul>
-        <li>Boreas</li>
-        <li>Zephryos</li>
-        <li>Notos</li>
-        <li>Euros</li>
+  <body class="font-dmsans bg-black">
+    <div id="frame-menu" class="h-screen p-5 flex flex-col justify-between">
+      <h1 class="text-xl text-white font-bold leading-tight">Indx.</h1>
+      <ul class="text-lg font-extralight leading-9">
+        <li class="flex items-center space-x-3">
+          <a id="list-point" href="" />
+          <a href="" class="text-white/50"><p>Boreas</p></a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <a id="list-point" href="" />
+          <a href="" class="text-white/50">Zephryos</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <a id="list-point" href="" />
+          <a href="" class="text-white/50">Notos</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <a id="list-point" href="" />
+          <a href="" class="text-white/50">Euros</a>
+        </li>
       </ul>
-      <button
-        onclick="window.location.href='https://login.framer.com/?origin=framer-web&redirect=https%3A%2F%2Fframer.com%2Fprojects%2Fnew%3Fduplicate%3DAu1NJpS6iTThIGTmFL3C'"
-      >
-        Remix
-      </button>
+      <div>
+        <a
+          class="px-3.5 py-2 bg-white rounded-3xl font-semibold"
+          href="https://login.framer.com/?origin=framer-web&redirect=https%3A%2F%2Fframer.com%2Fprojects%2Fnew%3Fduplicate%3DAu1NJpS6iTThIGTmFL3C"
+        >
+          Remix
+        </a>
+      </div>
     </div>
   </body>
 </html>
