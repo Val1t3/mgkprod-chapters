@@ -9,6 +9,10 @@ module.exports = {
       fontSize: {
         xl: '92px',
       },
+      spacing: {
+        880: '880px',
+        1400: '1400px',
+      }
     },
   },
   plugins: [],
