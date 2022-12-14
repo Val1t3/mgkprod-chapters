@@ -9,8 +9,8 @@ window.addEventListener("scroll", function () {
     let img3 = document.querySelector("#img-3");
     let img4 = document.querySelector("#img-4");
     img.style = `transform: translateY(${-0.2 * scroll}px);`
-    img2.style = `transform: translateY(${(-0.2 * scroll) - 120}px);`
-    img3.style = `transform: translateY(${(-0.2 * scroll) - 150}px);`
+    img2.style = `transform: translateY(${(-0.2 * scroll) - 95}px);`
+    img3.style = `transform: translateY(${(-0.2 * scroll) - 100}px);`
     img4.style = `transform: translateY(${(-0.2 * scroll)}px);`
 
     // ANIMATION FOR LIST-POINTS
@@ -24,6 +24,12 @@ window.addEventListener("scroll", function () {
     let text3 = document.getElementById("text-point-3");
     let text4 = document.getElementById("text-point-4");
 
+    // ANIMATION FOR DIV-IMAGES
+    let div1 = document.getElementById("boreas");
+    let div2 = document.getElementById("zephryos");
+    let div3 = document.getElementById("notos");
+    let div4 = document.getElementById("euros");
+
     if (scroll <= 168) {
         if (last !== 0) {
             last = 0;
@@ -31,6 +37,8 @@ window.addEventListener("scroll", function () {
             frame2.classList.replace("list-point-add", "list-point-del");
             text1.classList.replace("color-gray", "color-white");
             text2.classList.replace("color-white", "color-gray");
+            div1.classList.replace("opacity-mid", "opacity-full");
+            div2.classList.replace("opacity-full", "opacity-mid");
         }
     } else if (scroll > 168 && scroll <= 850) {
         if (last !== 1) {
@@ -41,6 +49,9 @@ window.addEventListener("scroll", function () {
             text1.classList.replace("color-white", "color-gray");
             text2.classList.replace("color-gray", "color-white");
             text3.classList.replace("color-white", "color-gray");
+            div1.classList.replace("opacity-full", "opacity-mid");
+            div2.classList.replace("opacity-mid", "opacity-full");
+            div3.classList.replace("opacity-full", "opacity-mid");
         }
     } else if (scroll > 850 && scroll <= 1529) {
         if (last !== 2) {
@@ -51,6 +62,9 @@ window.addEventListener("scroll", function () {
             text2.classList.replace("color-white", "color-gray");
             text3.classList.replace("color-gray", "color-white");
             text4.classList.replace("color-white", "color-gray");
+            div2.classList.replace("opacity-full", "opacity-mid");
+            div3.classList.replace("opacity-mid", "opacity-full");
+            div4.classList.replace("opacity-full", "opacity-mid");
         }
     } else {
         if (last !== 3) {
@@ -59,6 +73,8 @@ window.addEventListener("scroll", function () {
             frame3.classList.replace("list-point-add", "list-point-del");
             text3.classList.replace("color-white", "color-gray");
             text4.classList.replace("color-gray", "color-white");
+            div3.classList.replace("opacity-full", "opacity-mid");
+            div4.classList.replace("opacity-mid", "opacity-full");
         }
     }
 });

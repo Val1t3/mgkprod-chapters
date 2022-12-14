@@ -75,3 +75,11 @@ html {
 .img-not {
     transform: scaleX(0.96);
 }
+
+.opacity-full {
+    opacity: 1;
+}
+
+.opacity-mid {
+    opacity: 0.45;
+}

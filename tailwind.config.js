@@ -12,7 +12,7 @@ module.exports = {
       spacing: {
         '26rem': '26rem',
         '120px': '120px',
-        660: '660px',
+        700: '700px',
         880: '880px',
         1400: '1400px',
       }
