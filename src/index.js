@@ -3,6 +3,17 @@ let last = 0;
 window.addEventListener("scroll", function () {
     let scroll = this.scrollY;
 
+    // TRANSLATE FOR IMAGES
+    let img = document.querySelector("#img-1");
+    let img2 = document.querySelector("#img-2");
+    let img3 = document.querySelector("#img-3");
+    let img4 = document.querySelector("#img-4");
+    img.style = `transform: translateY(${-0.2 * scroll}px);`
+    img2.style = `transform: translateY(${(-0.2 * scroll) - 120}px);`
+    img3.style = `transform: translateY(${(-0.2 * scroll) - 150}px);`
+    img4.style = `transform: translateY(${(-0.2 * scroll)}px);`
+
+    // ANIMATION FOR LIST-POINTS
     let frame1 = document.getElementById("list-point-1");
     let frame2 = document.getElementById("list-point-2");
     let frame3 = document.getElementById("list-point-3");

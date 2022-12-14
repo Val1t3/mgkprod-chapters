@@ -67,3 +67,11 @@ html {
     line-height: 1.1em;
     transform: perspective(1200px);
 }
+
+.img-hover {
+    transform: scaleX(1);
+}
+
+.img-not {
+    transform: scaleX(0.96);
+}
