@@ -25,23 +25,25 @@
       id="frame-menu"
       class="h-screen p-5 flex flex-col justify-between fixed"
     >
-      <h1 class="text-xl text-white font-bold leading-tight">Indx.</h1>
+      <h1 class="text-xl text-white font-bold leading-tight tracking-tighter">
+        Indx.
+      </h1>
       <ul class="text-lg font-extralight leading-9">
         <a href="#boreas" class="flex items-center space-x-3">
-          <p id="list-point" />
-          <p class="text-white/50">Boreas</p>
+          <p id="list-point-1" class="list-point-add" />
+          <p id="text-point-1" class="color-white">Boreas</p>
         </a>
         <a href="#zephryos" class="flex items-center space-x-3">
-          <p id="list-point" />
-          <p class="text-white/50">Zephryos</p>
+          <p id="list-point-2" class="list-point-del" />
+          <p id="text-point-2" class="color-gray">Zephryos</p>
         </a>
         <a href="#notos" class="flex items-center space-x-3">
-          <p id="list-point" />
-          <p class="text-white/50">Notos</p>
+          <p id="list-point-3" class="list-point-del" />
+          <p id="text-point-3" class="color-gray">Notos</p>
         </a>
         <a href="#euros" class="flex items-center space-x-3">
-          <p id="list-point" />
-          <p class="text-white/50">Euros</p>
+          <p id="list-point-4" class="list-point-del" />
+          <p id="text-point-4" class="color-gray">Euros</p>
         </a>
       </ul>
       <div>
@@ -58,27 +60,31 @@
       id="frame-content"
       class="p-5 space-y-5 w-screen flex flex-col items-end"
     >
-      <div id="boreas" class="h-660 overflow-hidden rounded-xl">
+      <div id="boreas" class="h-660 overflow-hidden rounded-xl relative">
+        <div class="absolute bottom-10 left-10 flex items-end space-x-2">
+          <p class="text-white text-img">Boreas</p>
+          <p class="text-gray-50/75 num-img">2022</p>
+        </div>
         <img
-          class="w-880"
+          class="w-880 rounded-xl"
           src="https://framerusercontent.com/images/FEP15HXyet2hD2zjvt34aDrK0Y.jpg?scale-down-to=2048"
         />
       </div>
-      <div id="zephryos" class="h-660 overflow-hidden rounded-xl">
+      <div id="zephryos" class="h-660 overflow-hidden rounded-xl relative">
         <img
-          class="w-880 -translate-y-52"
+          class="w-880 rounded-xl -translate-y-52"
           src="https://framerusercontent.com/images/lGY8wKLx6xosK6RjStJh0XNVAok.jpg?scale-down-to=2048"
         />
       </div>
-      <div id="notos" class="h-660 overflow-hidden rounded-xl">
+      <div id="notos" class="h-660 overflow-hidden rounded-xl relative">
         <img
-          class="w-880 -translate-y-26rem"
+          class="w-880 rounded-xl -translate-y-26rem"
           src="https://framerusercontent.com/images/jUkEVCC2mo5l7eUeHXuaih8AexU.jpg?scale-down-to=2048"
         />
       </div>
-      <div id="euros" class="h-660 overflow-hidden rounded-xl">
+      <div id="euros" class="h-660 overflow-hidden rounded-xl relative">
         <img
-          class="w-880 -translate-y-26rem"
+          class="w-880 rounded-xl -translate-y-26rem"
           src="https://framerusercontent.com/images/VYSy33ks5AnbxfgJZFqU2wXZtIU.jpg?scale-down-to=2048"
         />
       </div>

@@ -2,8 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ANIMATED LIST-POINT IN FRAME-MENU */
-@keyframes list-point-animation {
+@keyframes list-point-animation-add {
     from {
         background-color: gray;
         width: 2px;
@@ -11,6 +10,17 @@ html {
     to {
         background-color: white;
         width: 30px;
+    }
+}
+
+@keyframes list-point-animation-del {
+    from {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 30px;
+    }
+    to {
+        background-color: rgba(255, 255, 255, 1);
+        width: 2px;
     }
 }
 
@@ -22,17 +32,38 @@ html {
 
 .list-point-add {
     height: 2px;
-    animation-name: list-point-animation;
-    animation-duration: 0.35s;
+    animation-name: list-point-animation-add;
+    animation-duration: 0.15s;
     animation-timing-function: linear;
-    animation-fill-mode: backwards
+    animation-fill-mode: both
 }
 
 .list-point-del {
     height: 2px;
-    animation-name: list-point-animation;
-    animation-duration: 0.35s;
+    animation-name: list-point-animation-del;
+    animation-duration: 0.15s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-direction: reverse;
+    animation-fill-mode: both;
+}
+
+.color-white {
+    color: rgba(255, 255, 255, 1);
+}
+
+.color-gray {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text-img {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1em;
+}
+
+.num-img {
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    transform: perspective(1200px);
 }
