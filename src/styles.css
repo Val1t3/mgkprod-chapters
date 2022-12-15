@@ -26,7 +26,7 @@ html {
 
 @keyframes img-hover-anim {
     from {
-        width: 860px;
+        width: 850px;
     }
     to {
         width: 880px;
@@ -38,7 +38,7 @@ html {
         width: 880px;
     }
     to {
-        width: 860px;
+        width: 850px;
     }
 }
 
@@ -74,13 +74,14 @@ html {
 
 .text-img {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -2px;
     line-height: 1em;
 }
 
 .num-img {
     font-size: 32px;
+    font-weight: 100;
     letter-spacing: -1px;
     line-height: 1.1em;
     transform: perspective(1200px);
@@ -88,16 +89,18 @@ html {
 
 .img-hover {
     animation-name: img-hover-anim;
-    animation-duration: 0.15s;
+    animation-duration: 0.22s;
     animation-timing-function: linear;
-    animation-fill-mode: both
+    animation-fill-mode: both;
+    animation-delay: 0.04s;
 }
 
 .img-not {
     animation-name: img-not-anim;
-    animation-duration: 0.15s;
+    animation-duration: 0.22s;
     animation-timing-function: linear;
-    animation-fill-mode: both
+    animation-fill-mode: both;
+    animation-delay: 0.04s;
 }
 
 .opacity-full {

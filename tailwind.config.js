@@ -7,11 +7,14 @@ module.exports = {
         'dmsans': ['DM Sans', 'sans-serif'],
       },
       fontSize: {
+        xs: '32px',
+        sm: '40px',
         xl: '92px',
       },
       spacing: {
         '26rem': '26rem',
-        120: '120px',
+        40: '40px',
+        95: '95px',
         700: '700px',
         800:'850px',
         880: '880px',

@@ -8,10 +8,10 @@ window.addEventListener("scroll", function () {
     let img2 = document.querySelector("#img-2");
     let img3 = document.querySelector("#img-3");
     let img4 = document.querySelector("#img-4");
-    img1.style = `transform: translateY(${-0.2 * scroll}px);`
-    img2.style = `transform: translateY(${(-0.2 * scroll) - 95}px);`
-    img3.style = `transform: translateY(${(-0.2 * scroll) - 100}px);`
-    img4.style = `transform: translateY(${(-0.2 * scroll)}px);`
+    img1.style = `transform: translateY(${-0.23 * scroll}px);`
+    img2.style = `transform: translateY(${(-0.23 * scroll) - 95}px);`
+    img3.style = `transform: translateY(${(-0.23 * scroll) - 60}px);`
+    img4.style = `transform: translateY(${(-0.23 * scroll) + 100}px);`
 
     // ANIMATION FOR LIST-POINTS
     let frame1 = document.getElementById("list-point-1");
