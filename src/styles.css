@@ -24,6 +24,24 @@ html {
     }
 }
 
+@keyframes img-hover-anim {
+    from {
+        width: 860px;
+    }
+    to {
+        width: 880px;
+    }
+}
+
+@keyframes img-not-anim {
+    from {
+        width: 880px;
+    }
+    to {
+        width: 860px;
+    }
+}
+
 #list-point {
     height: 2px;
     background-color: gray;
@@ -69,11 +87,17 @@ html {
 }
 
 .img-hover {
-    transform: scaleX(1);
+    animation-name: img-hover-anim;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-fill-mode: both
 }
 
 .img-not {
-    transform: scaleX(0.96);
+    animation-name: img-not-anim;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-fill-mode: both
 }
 
 .opacity-full {
