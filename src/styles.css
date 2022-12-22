@@ -42,21 +42,29 @@ html {
   }
 }
 
-@keyframes down-anim {
-  from {
+@keyframes to-down-anim {
+  0% {
     transform: translateY(-40px);
+    opacity: 0;
   }
-  to {
+  50% {
+    opacity: 1;
+  }
+  100% {
     transform: translateY(0px);
   }
 }
 
-@keyframes up-anim {
-  from {
-    transform: translateY(40px);
-  }
-  to {
+@keyframes to-up-anim {
+  0% {
     transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 0;
   }
 }
 
@@ -129,34 +137,30 @@ html {
   opacity: 0.45;
 }
 
-.opacity-null {
-  opacity: 0;
+.text-to-up {
+  animation-name: to-up-anim;
+  animation-duration: 0.55s;
+  animation-delay: 0.05s;
+  animation-fill-mode: both;
 }
 
-.text-up {
-  animation-name: up-anim;
+.text-to-down {
+  animation-name: to-down-anim;
   animation-duration: 0.55s;
+  animation-delay: 0.05s;
   animation-fill-mode: both;
-  animation-delay: 0.06s;
 }
 
-.text-down {
-  animation-name: down-anim;
+.date-to-up {
+  animation-name: to-up-anim;
   animation-duration: 0.55s;
+  animation-delay: 0.15s;
   animation-fill-mode: both;
-  animation-delay: 0.06s;
 }
 
-.date-up {
-  animation-name: up-anim;
+.date-to-down {
+  animation-name: to-down-anim;
   animation-duration: 0.55s;
+  animation-delay: 0.15s;
   animation-fill-mode: both;
-  animation-delay: 0.13s;
-}
-
-.date-down {
-  animation-name: down-anim;
-  animation-duration: 0.55s;
-  animation-fill-mode: both;
-  animation-delay: 0.13s;
 }

@@ -53,6 +53,10 @@ window.addEventListener("scroll", function () {
             div2.classList.replace("opacity-full", "opacity-mid");
             img1.classList.replace("img-not", "img-hover");
             img2.classList.replace("img-hover", "img-not");
+            text_1.classList.replace("text-to-up", "text-to-down");
+            date_1.classList.replace("date-to-up", "date-to-down");
+            text_2.classList.replace("text-to-down", "text-to-up");
+            date_2.classList.replace("date-to-down", "date-to-up");
         }
     } else if (scroll > 168 && scroll <= 850) {
         if (last !== 1) {
@@ -69,6 +73,12 @@ window.addEventListener("scroll", function () {
             img1.classList.replace("img-hover", "img-not");
             img2.classList.replace("img-not", "img-hover");
             img3.classList.replace("img-hover", "img-not");
+            text_1.classList.replace("text-to-down", "text-to-up");
+            date_1.classList.replace("date-to-down", "date-to-up");
+            text_2.classList.replace("text-to-up", "text-to-down");
+            date_2.classList.replace("date-to-up", "date-to-down");
+            text_3.classList.replace("text-to-down", "text-to-up");
+            date_3.classList.replace("date-to-down", "date-to-up");
         }
     } else if (scroll > 850 && scroll <= 1529) {
         if (last !== 2) {
@@ -85,6 +95,12 @@ window.addEventListener("scroll", function () {
             img2.classList.replace("img-hover", "img-not");
             img3.classList.replace("img-not", "img-hover");
             img4.classList.replace("img-hover", "img-not");
+            text_2.classList.replace("text-to-down", "text-to-up");
+            date_2.classList.replace("date-to-down", "date-to-up");
+            text_3.classList.replace("text-to-up", "text-to-down");
+            date_3.classList.replace("date-to-up", "date-to-down");
+            text_4.classList.replace("text-to-down", "text-to-up");
+            date_4.classList.replace("date-to-down", "date-to-up");
         }
     } else {
         if (last !== 3) {
@@ -97,6 +113,10 @@ window.addEventListener("scroll", function () {
             div4.classList.replace("opacity-mid", "opacity-full");
             img3.classList.replace("img-hover", "img-not");
             img4.classList.replace("img-not", "img-hover");
+            text_3.classList.replace("text-to-down", "text-to-up");
+            date_3.classList.replace("date-to-down", "date-to-up");
+            text_4.classList.replace("text-to-up", "text-to-down");
+            date_4.classList.replace("date-to-up", "date-to-down");
         }
     }
 });
