@@ -1,112 +1,162 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 @keyframes list-point-animation-add {
-    from {
-        background-color: gray;
-        width: 2px;
-    }
-    to {
-        background-color: white;
-        width: 30px;
-    }
+  from {
+    background-color: gray;
+    width: 2px;
+  }
+  to {
+    background-color: white;
+    width: 30px;
+  }
 }
 
 @keyframes list-point-animation-del {
-    from {
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 30px;
-    }
-    to {
-        background-color: rgba(255, 255, 255, 1);
-        width: 2px;
-    }
+  from {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 30px;
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    width: 2px;
+  }
 }
 
 @keyframes img-hover-anim {
-    from {
-        width: 850px;
-    }
-    to {
-        width: 880px;
-    }
+  from {
+    width: 850px;
+  }
+  to {
+    width: 880px;
+  }
 }
 
 @keyframes img-not-anim {
-    from {
-        width: 880px;
-    }
-    to {
-        width: 850px;
-    }
+  from {
+    width: 880px;
+  }
+  to {
+    width: 850px;
+  }
+}
+
+@keyframes down-anim {
+  from {
+    transform: translateY(-40px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes up-anim {
+  from {
+    transform: translateY(40px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 #list-point {
-    height: 2px;
-    background-color: gray;
-    width: 2px;
+  height: 2px;
+  background-color: gray;
+  width: 2px;
 }
 
 .list-point-add {
-    height: 2px;
-    animation-name: list-point-animation-add;
-    animation-duration: 0.15s;
-    animation-timing-function: linear;
-    animation-fill-mode: both
+  height: 2px;
+  animation-name: list-point-animation-add;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
 }
 
 .list-point-del {
-    height: 2px;
-    animation-name: list-point-animation-del;
-    animation-duration: 0.15s;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
+  height: 2px;
+  animation-name: list-point-animation-del;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
 }
 
 .color-white {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .color-gray {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .text-img {
-    font-size: 40px;
-    font-weight: 500;
-    letter-spacing: -2px;
-    line-height: 1em;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 1em;
 }
 
 .num-img {
-    font-size: 32px;
-    font-weight: 100;
-    letter-spacing: -1px;
-    line-height: 1.1em;
-    transform: perspective(1200px);
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: -1px;
+  line-height: 1.1em;
+  transform: perspective(1200px);
 }
 
 .img-hover {
-    animation-name: img-hover-anim;
-    animation-duration: 0.22s;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-    animation-delay: 0.04s;
+  animation-name: img-hover-anim;
+  animation-duration: 0.22s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-delay: 0.04s;
 }
 
 .img-not {
-    animation-name: img-not-anim;
-    animation-duration: 0.22s;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-    animation-delay: 0.04s;
+  animation-name: img-not-anim;
+  animation-duration: 0.22s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-delay: 0.04s;
 }
 
 .opacity-full {
-    opacity: 1;
+  opacity: 1;
 }
 
 .opacity-mid {
-    opacity: 0.45;
+  opacity: 0.45;
+}
+
+.opacity-null {
+  opacity: 0;
+}
+
+.text-up {
+  animation-name: up-anim;
+  animation-duration: 0.55s;
+  animation-fill-mode: both;
+  animation-delay: 0.06s;
+}
+
+.text-down {
+  animation-name: down-anim;
+  animation-duration: 0.55s;
+  animation-fill-mode: both;
+  animation-delay: 0.06s;
+}
+
+.date-up {
+  animation-name: up-anim;
+  animation-duration: 0.55s;
+  animation-fill-mode: both;
+  animation-delay: 0.13s;
+}
+
+.date-down {
+  animation-name: down-anim;
+  animation-duration: 0.55s;
+  animation-fill-mode: both;
+  animation-delay: 0.13s;
 }

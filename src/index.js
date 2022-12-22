@@ -30,6 +30,18 @@ window.addEventListener("scroll", function () {
     let div3 = document.getElementById("notos");
     let div4 = document.getElementById("euros");
 
+    // ANIMATION FOR TEXT-IMAGES
+    let text_1 = document.getElementById("text-1");
+    let text_2 = document.getElementById("text-2");
+    let text_3 = document.getElementById("text-3");
+    let text_4 = document.getElementById("text-4");
+
+    let date_1 = document.getElementById("date-1");
+    let date_2 = document.getElementById("date-2");
+    let date_3 = document.getElementById("date-3");
+    let date_4 = document.getElementById("date-4");
+
+
     if (scroll <= 168) {
         if (last !== 0) {
             last = 0;

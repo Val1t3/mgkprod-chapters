@@ -1,141 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <link href="./styles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Chapters — Framer Scroll Animation Demo</title>
-    <link
-      rel="icon"
-      href="https://framerusercontent.com/sites/icons/default-favicon.v3.png"
-    />
-  </head>
-  <body class="font-dmsans bg-black flex">
-    <!-- FRAME-MENU -->
-    <div
-      id="frame-menu"
-      class="h-screen p-5 flex flex-col justify-between fixed"
-    >
-      <h1 class="text-xl text-white font-bold leading-tight tracking-tighter">
-        Indx.
-      </h1>
-      <ul class="text-lg font-extralight leading-9">
-        <a href="#boreas" class="flex items-center space-x-3">
-          <p id="list-point-1" class="list-point-add" />
-          <p id="text-point-1" class="color-white">Boreas</p>
-        </a>
-        <a href="#zephryos" class="flex items-center space-x-3">
-          <p id="list-point-2" class="list-point-del" />
-          <p id="text-point-2" class="color-gray">Zephryos</p>
-        </a>
-        <a href="#notos" class="flex items-center space-x-3">
-          <p id="list-point-3" class="list-point-del" />
-          <p id="text-point-3" class="color-gray">Notos</p>
-        </a>
-        <a href="#euros" class="flex items-center space-x-3">
-          <p id="list-point-4" class="list-point-del" />
-          <p id="text-point-4" class="color-gray">Euros</p>
-        </a>
-      </ul>
-      <div>
-        <a
-          class="px-3.5 py-2 bg-white rounded-3xl font-semibold"
-          href="https://login.framer.com/?origin=framer-web&redirect=https%3A%2F%2Fframer.com%2Fprojects%2Fnew%3Fduplicate%3DAu1NJpS6iTThIGTmFL3C"
-        >
-          Remix
-        </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="./styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>Chapters — Framer Scroll Animation Demo</title>
+  <link rel="icon" href="https://framerusercontent.com/sites/icons/default-favicon.v3.png" />
+</head>
+
+<body class="font-dmsans bg-black flex relative">
+  <!-- FRAME-MENU -->
+  <div id="frame-menu" class="h-screen p-5 flex flex-col justify-between sticky top-0 left-0">
+    <h1 class="text-xl text-white font-bold leading-tight tracking-tighter">
+      Indx.
+    </h1>
+    <ul class="text-lg font-extralight leading-9">
+      <a href="#boreas" class="flex items-center space-x-3">
+        <p id="list-point-1" class="list-point-add" />
+        <p id="text-point-1" class="color-white">Boreas</p>
+      </a>
+      <a href="#zephryos" class="flex items-center space-x-3">
+        <p id="list-point-2" class="list-point-del" />
+        <p id="text-point-2" class="color-gray">Zephryos</p>
+      </a>
+      <a href="#notos" class="flex items-center space-x-3">
+        <p id="list-point-3" class="list-point-del" />
+        <p id="text-point-3" class="color-gray">Notos</p>
+      </a>
+      <a href="#euros" class="flex items-center space-x-3">
+        <p id="list-point-4" class="list-point-del" />
+        <p id="text-point-4" class="color-gray">Euros</p>
+      </a>
+    </ul>
+    <div>
+      <a class="px-3.5 py-2 bg-white rounded-3xl font-semibold"
+        href="https://login.framer.com/?origin=framer-web&redirect=https%3A%2F%2Fframer.com%2Fprojects%2Fnew%3Fduplicate%3DAu1NJpS6iTThIGTmFL3C">
+        Remix
+      </a>
+    </div>
+  </div>
+
+  <!-- FRAME-CONTENT -->
+  <div id="frame-content" class="p-5 space-y-5 w-screen flex flex-col items-end relative">
+    <!-- BOREAS -->
+    <div class="relative">
+      <div id="boreas" class="h-700 overflow-hidden rounded-xl relative opacity-full">
+        <img id="img-1" class="rounded-xl img-hover"
+          src="https://framerusercontent.com/images/FEP15HXyet2hD2zjvt34aDrK0Y.jpg?scale-down-to=2048" />
+        <div class="absolute bottom-10 left-10 flex items-end space-x-2 z-50">
+          <p id="text-1" class="text-white text-img text-sm text-up formated-opacity-nf">
+            Boreas
+          </p>
+          <p id="date-1" class="text-gray-50/75 num-img text-sm date-up">
+            2022
+          </p>
+        </div>
       </div>
     </div>
 
-    <!-- FRAME-CONTENT -->
-    <div
-      id="frame-content"
-      class="p-5 space-y-5 w-screen flex flex-col items-end"
-    >
-      <!-- BOREAS -->
-      <div class="relative">
-        <div
-          id="boreas"
-          class="h-700 overflow-hidden rounded-xl relative opacity-full"
-        >
-          <img
-            id="img-1"
-            class="rounded-xl img-hover"
-            src="https://framerusercontent.com/images/FEP15HXyet2hD2zjvt34aDrK0Y.jpg?scale-down-to=2048"
-          />
-          <div class="absolute bottom-10 left-10 flex items-end space-x-2 z-50">
-            <p class="text-white text-img text-sm">Boreas</p>
-            <p class="text-gray-50/75 num-img text-sm">2022</p>
-          </div>
-        </div>
+    <!-- ZEPHRYOS -->
+    <div class="relative">
+      <div id="zephryos" class="h-700 overflow-hidden rounded-xl relative opacity-mid">
+        <img id="img-2" class="rounded-xl -translate-y-95 img-not z-0"
+          src="https://framerusercontent.com/images/lGY8wKLx6xosK6RjStJh0XNVAok.jpg?scale-down-to=2048" />
       </div>
-
-      <!-- ZEPHRYOS -->
-      <div class="relative">
-        <div
-          id="zephryos"
-          class="h-700 overflow-hidden rounded-xl relative opacity-mid"
-        >
-          <img
-            id="img-2"
-            class="rounded-xl -translate-y-95 img-not z-0"
-            src="https://framerusercontent.com/images/lGY8wKLx6xosK6RjStJh0XNVAok.jpg?scale-down-to=2048"
-          />
-        </div>
-        <div class="absolute bottom-10 left-10 flex items-end space-x-2 z-50">
-          <p class="text-white text-img text-sm">Zephryos</p>
-          <p class="text-gray-50/75 num-img text-sm">2022</p>
-        </div>
-      </div>
-
-      <!-- NOTOS -->
-      <div class="relative">
-        <div
-          id="notos"
-          class="h-700 overflow-hidden rounded-xl relative opacity-mid"
-        >
-          <div class="bottom-10 left-10 flex items-end space-x-2 z-50">
-            <p class="text-white text-img text-sm">Notos</p>
-            <p class="text-gray-50/75 num-img text-sm">2022</p>
-          </div>
-          <img
-            id="img-3"
-            class="w-800 rounded-xl -translate-y-26rem img-not"
-            src="https://framerusercontent.com/images/jUkEVCC2mo5l7eUeHXuaih8AexU.jpg?scale-down-to=2048"
-          />
-        </div>
-        <div class="absolute bottom-10 left-10 flex items-end space-x-2 z-50">
-          <p class="text-white text-img text-sm">Notos</p>
-          <p class="text-gray-50/75 num-img text-sm">2021</p>
-        </div>
-      </div>
-
-      <!-- EUROS -->
-      <div class="relative">
-        <div
-          id="euros"
-          class="h-700 overflow-hidden rounded-xl relative opacity-mid"
-        >
-          <img
-            id="img-4"
-            class="w-800 rounded-xl img-not"
-            src="https://framerusercontent.com/images/VYSy33ks5AnbxfgJZFqU2wXZtIU.jpg?scale-down-to=2048"
-          />
-        </div>
-        <div class="absolute bottom-10 left-10 flex items-end space-x-2 z-50">
-          <p class="text-white text-img text-sm">Euros</p>
-          <p class="text-gray-50/75 num-img text-sm">2020</p>
-        </div>
+      <div class="absolute bottom-10 left-10 flex items-end space-x-2 z-50">
+        <p id="text-2" class="text-white text-img text-sm text-down formated-opacity-fn">
+          Zephryos
+        </p>
+        <p id="date-2" class="text-gray-50/75 num-img text-sm date-down">
+          2022
+        </p>
       </div>
     </div>
-    <script src="./index.js"></script>
-  </body>
+
+    <!-- NOTOS -->
+    <div class="relative">
+      <div id="notos" class="h-700 overflow-hidden rounded-xl relative opacity-mid">
+        <img id="img-3" class="w-800 rounded-xl -translate-y-26rem img-not"
+          src="https://framerusercontent.com/images/jUkEVCC2mo5l7eUeHXuaih8AexU.jpg?scale-down-to=2048" />
+      </div>
+      <div class="absolute bottom-10 left-10 flex items-end space-x-2 z-50">
+        <p id="text-3" class="text-white text-img text-sm text-down formated-opacity-fn">
+          Notos
+        </p>
+        <p id="date-3" class="text-gray-50/75 num-img text-sm date-down">
+          2021
+        </p>
+      </div>
+    </div>
+
+    <!-- EUROS -->
+    <div class="relative">
+      <div id="euros" class="h-700 overflow-hidden rounded-xl relative opacity-mid">
+        <img id="img-4" class="w-800 rounded-xl img-not"
+          src="https://framerusercontent.com/images/VYSy33ks5AnbxfgJZFqU2wXZtIU.jpg?scale-down-to=2048" />
+      </div>
+      <div class="absolute bottom-10 left-10 flex items-end space-x-2 z-50">
+        <p id="text-4" class="text-white text-img text-sm text-down formated-opacity-fn">
+          Euros
+        </p>
+        <p id="date-4" class="text-gray-50/75 num-img text-sm date-down">
+          2020
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
 </html>
