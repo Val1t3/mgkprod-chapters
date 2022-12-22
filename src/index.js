@@ -2,6 +2,7 @@ let last = 0;
 
 window.addEventListener("scroll", function () {
     let scroll = this.scrollY;
+    console.log(window.scrollY)
 
     // TRANSLATE FOR IMAGES
     let img1 = document.querySelector("#img-1");
@@ -42,7 +43,7 @@ window.addEventListener("scroll", function () {
     let date_4 = document.getElementById("date-4");
 
 
-    if (scroll <= 168) {
+    if (scroll <= 252) {
         if (last !== 0) {
             last = 0;
             frame1.classList.replace("list-point-del", "list-point-add");
@@ -58,7 +59,7 @@ window.addEventListener("scroll", function () {
             text_2.classList.replace("text-to-down", "text-to-up");
             date_2.classList.replace("date-to-down", "date-to-up");
         }
-    } else if (scroll > 168 && scroll <= 850) {
+    } else if (scroll > 252 && scroll <= 1006) {
         if (last !== 1) {
             last = 1;
             frame1.classList.replace("list-point-add", "list-point-del");
@@ -80,7 +81,7 @@ window.addEventListener("scroll", function () {
             text_3.classList.replace("text-to-down", "text-to-up");
             date_3.classList.replace("date-to-down", "date-to-up");
         }
-    } else if (scroll > 850 && scroll <= 1529) {
+    } else if (scroll > 1006 && scroll <= 1700) {
         if (last !== 2) {
             last = 2;
             frame2.classList.replace("list-point-add", "list-point-del");

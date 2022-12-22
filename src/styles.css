@@ -115,18 +115,16 @@ html {
 
 .img-hover {
   animation-name: img-hover-anim;
-  animation-duration: 0.22s;
-  animation-timing-function: linear;
+  animation-duration: 0.3s;
   animation-fill-mode: both;
-  animation-delay: 0.04s;
+  animation-delay: 0.07s;
 }
 
 .img-not {
   animation-name: img-not-anim;
-  animation-duration: 0.22s;
-  animation-timing-function: linear;
+  animation-duration: 0.3s;
   animation-fill-mode: both;
-  animation-delay: 0.04s;
+  animation-delay: 0.07s;
 }
 
 .opacity-full {
