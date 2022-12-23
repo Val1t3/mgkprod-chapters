@@ -263,3 +263,8 @@ html {
   animation-delay: 0.15s;
   animation-fill-mode: both;
 }
+
+.box-shadow-img {
+  -webkit-box-shadow: inset 0px -50px 50px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0px -50px 50px 12px rgba(0, 0, 0, 0.6);
+}
