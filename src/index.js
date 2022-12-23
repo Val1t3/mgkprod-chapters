@@ -42,6 +42,11 @@ window.addEventListener("scroll", function () {
     let date_3 = document.getElementById("date-3");
     let date_4 = document.getElementById("date-4");
 
+    let bg_1 = document.getElementById("bg-1");
+    let bg_2 = document.getElementById("bg-2");
+    let bg_3 = document.getElementById("bg-3");
+    let bg_4 = document.getElementById("bg-4");
+
 
     if (scroll <= 252) {
         if (last !== 0) {
@@ -58,6 +63,8 @@ window.addEventListener("scroll", function () {
             date_1.classList.replace("date-to-up", "date-to-down");
             text_2.classList.replace("text-to-down", "text-to-up");
             date_2.classList.replace("date-to-down", "date-to-up");
+            bg_1.classList.replace("bg-null", "bg-full");
+            bg_2.classList.replace("bg-full", "bg-null");
         }
     } else if (scroll > 252 && scroll <= 1006) {
         if (last !== 1) {
@@ -80,6 +87,9 @@ window.addEventListener("scroll", function () {
             date_2.classList.replace("date-to-up", "date-to-down");
             text_3.classList.replace("text-to-down", "text-to-up");
             date_3.classList.replace("date-to-down", "date-to-up");
+            bg_1.classList.replace("bg-full", "bg-null");
+            bg_2.classList.replace("bg-null", "bg-full");
+            bg_3.classList.replace("bg-full", "bg-null");
         }
     } else if (scroll > 1006 && scroll <= 1700) {
         if (last !== 2) {
@@ -102,6 +112,9 @@ window.addEventListener("scroll", function () {
             date_3.classList.replace("date-to-up", "date-to-down");
             text_4.classList.replace("text-to-down", "text-to-up");
             date_4.classList.replace("date-to-down", "date-to-up");
+            bg_2.classList.replace("bg-full", "bg-null");
+            bg_3.classList.replace("bg-null", "bg-full");
+            bg_4.classList.replace("bg-full", "bg-null");
         }
     } else {
         if (last !== 3) {
@@ -118,6 +131,8 @@ window.addEventListener("scroll", function () {
             date_3.classList.replace("date-to-down", "date-to-up");
             text_4.classList.replace("text-to-up", "text-to-down");
             date_4.classList.replace("date-to-up", "date-to-down");
+            bg_3.classList.replace("bg-full", "bg-null");
+            bg_4.classList.replace("bg-null", "bg-full");
         }
     }
 });
